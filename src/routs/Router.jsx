@@ -6,6 +6,7 @@ import Perfil from '../pages/Perfil';
 import VideoTutorial from '../pages/VideoTutorial';
 import VideoPlayPage from '../pages/VideoPlayPage';
 import Recarger from '../pages/Recarger';
+import RecargerDetail from '../pages/RecargerDetail';
 
 const router = createBrowserRouter(
     [
@@ -32,6 +33,10 @@ const router = createBrowserRouter(
               {
                 path: "/recargar",
                 element: <Recarger />
+              },
+              {
+                path: "/recarger-detail",
+                element: <RecargerDetail />
               },
             
             ]
