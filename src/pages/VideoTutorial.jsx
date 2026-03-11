@@ -6,11 +6,11 @@ function VideoTutorial() {
   const navigate = useNavigate();
 
   const tutorials = [
-    { title: "Tutorial de Binance", video: "/videos/binance.mp4" },
-    { title: "Tutorial de Binance", video: "/videos/binance2.mp4" },
-    { title: "Tutorial de misión", video: "/videos/mision.mp4" },
-    { title: "Tutorial de invitación", video: "/videos/invitacion.mp4" },
-    { title: "Tutorial de registro", video: "/videos/registro.mp4" },
+    { title: "Tutorial de Binance", video: "/debi1.mp4" },
+    { title: "Tutorial de Binance", video: "/debi2.mp4" },
+    { title: "Tutorial de misión", video: "/deme.mp4" },
+    { title: "Tutorial de invitación", video: "/dein.mp4" },
+    { title: "Tutorial de registro", video: "/dere.mp4" },
   ];
 
   const handleBack = () => navigate(-1);
