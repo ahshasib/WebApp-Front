@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 
 const buttons = [
   { img: "/11.png", title: "Perfil", path: "/perfil" },
-  { img: "/22.png", title: "Video", path: "/video" },
+  { img: "/22.png", title: "Video", path: "/videotutoria" },
   { img: "/33.png", title: "Recargar", path: "/recargar" },
   { img: "/44.png", title: "Retirar", path: "/retirar" },
   { img: "/55.png", title: "VIP", path: "/vip" },

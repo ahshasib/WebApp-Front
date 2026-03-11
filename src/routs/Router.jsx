@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router'
 import RootLayout from './../layout/RootLayout';
 import Home from '../pages/Home';
 import Perfil from '../pages/Perfil';
+import VideoTutorial from '../pages/VideoTutorial';
 
 const router = createBrowserRouter(
     [
@@ -17,6 +18,10 @@ const router = createBrowserRouter(
             {
                 path: "/perfil",
                 element: <Perfil />
+              },
+              {
+                path: "/videotutoria",
+                element: <VideoTutorial />
               },
             
             ]
