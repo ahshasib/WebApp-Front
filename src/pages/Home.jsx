@@ -1,111 +1,156 @@
-
 import React, { useEffect, useRef } from "react";
-import { FaHome, FaInfoCircle, FaStar, FaPhone } from "react-icons/fa";
+import {
+  FaHome,
+  FaPlay,
+  FaWallet,
+  FaMoneyBill,
+  FaCrown,
+  FaMusic,
+  FaBook,
+  FaUsers,
+  FaBell,
+  FaUser,
+  FaChartLine,
+} from "react-icons/fa";
+import Slider from "../component/HomeSlider";
+import FunctionButtons from "../component/HomeFunctionButton";
 
 const Home = () => {
   const reviewRef = useRef(null);
 
-  // Auto scroll for review section
   useEffect(() => {
     const interval = setInterval(() => {
       if (reviewRef.current) {
-        reviewRef.current.scrollBy({ top: -1, behavior: "smooth" });
+        reviewRef.current.scrollBy({ top: -1 });
       }
-    }, 50);
+    }, 40);
     return () => clearInterval(interval);
   }, []);
 
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <div className="w-full min-h-screen flex flex-col">
-      {/* Slider Section */}
-      <div className="w-full h-[400px] bg-gray-200 relative flex items-center justify-center">
-        <h1 className="text-4xl font-bold">Slider Placeholder</h1>
-      </div>
+    <div className="w-full">
+      <div className="w-full mx-auto min-h-screen relative">
 
-      {/* Functionality Buttons */}
-      <div className="flex justify-around mt-6 mb-6">
-        <button
-          onClick={() => scrollToSection("section1")}
-          className="flex flex-col items-center text-blue-500 hover:text-blue-700"
-        >
-          <FaHome size={30} />
-          <span>Home</span>
-        </button>
-        <button
-          onClick={() => scrollToSection("section2")}
-          className="flex flex-col items-center text-green-500 hover:text-green-700"
-        >
-          <FaInfoCircle size={30} />
-          <span>Info</span>
-        </button>
-        <button
-          onClick={() => scrollToSection("section3")}
-          className="flex flex-col items-center text-yellow-500 hover:text-yellow-700"
-        >
-          <FaStar size={30} />
-          <span>Reviews</span>
-        </button>
-        <button
-          onClick={() => scrollToSection("section4")}
-          className="flex flex-col items-center text-red-500 hover:text-red-700"
-        >
-          <FaPhone size={30} />
-          <span>Contact</span>
-        </button>
-      </div>
+{/* Top Navbar */}
+<div className="flex items-center justify-between px-4 py-2 bg-slate-400 text-black">
+  <div className="text-green-700 text-2xl"><img className="w-8" src="lang.png" alt="" /></div>
+  <div className="font-bold">ASM</div>
+  <FaBell className="text-xl" />
+</div>
 
-      {/* Placeholder Sections */}
-      <div id="section1" className="h-[300px] bg-gray-100 flex items-center justify-center">
-        <h2 className="text-3xl font-semibold">Section 1: Home</h2>
-      </div>
-      <div id="section2" className="h-[300px] bg-gray-200 flex items-center justify-center">
-        <h2 className="text-3xl font-semibold">Section 2: Info</h2>
-      </div>
+{/* Banner */}
+<div >
+  <Slider></Slider>
+</div>
 
-      {/* Review Section */}
-      <div
-        id="section3"
-        ref={reviewRef}
-        className="h-[200px] overflow-hidden bg-white border-t border-b border-gray-300 my-6"
-      >
-        <div className="space-y-4 flex flex-col-reverse">
-          {Array.from({ length: 10 }).map((_, idx) => (
-            <div
-              key={idx}
-              className="p-4 bg-gray-100 rounded shadow text-center"
-            >
-              Review #{idx + 1}: This is a sample review text.
-            </div>
-          ))}
+{/* Announcement */}
+<div className="mx-3 mt-3 bg-linear-120 rounded-xl p-2 shadow-md">
+  <div
+    ref={reviewRef}
+    className="h-[6vh] overflow-hidden text-sm text-gray-700 flex items-center gap-4"
+  >
+    <img className="w-8 h-auto" src="home_notice.png" alt="" />
+    <div className="space-y-2 ">
+      
+      <p className="text-black"> Felicitaciones ****6231 recibió 6UFelicitaciones ****6231 recibió 6U</p>
+    </div>
+  </div>
+</div>
+
+{/* Function Buttons */}
+<div >
+
+<FunctionButtons />
+</div>
+
+{/* Member List */}
+<div className="px-4 mt-6 pb-20">
+  <h2 className="text-lg font-semibold mb-3">Lista de miembros</h2>
+
+  <div className="space-y-4">
+
+    <div className="flex justify-between items-center">
+      <div className="flex items-center gap-3">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+          className="w-8"
+        />
+        <div>
+          <p className="text-sm">Felicidades ****8347</p>
+          <p className="text-xs text-blue-500">
+            180 listados completados hoy
+          </p>
         </div>
       </div>
+      <p className="text-blue-500 font-semibold">2106 USDT</p>
+    </div>
 
-      <div id="section4" className="h-[300px] bg-gray-100 flex items-center justify-center">
-        <h2 className="text-3xl font-semibold">Section 4: Contact</h2>
+    <div className="flex justify-between items-center">
+      <div className="flex items-center gap-3">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png"
+          className="w-8"
+        />
+        <div>
+          <p className="text-sm">Felicidades ****2086</p>
+          <p className="text-xs text-blue-500">
+            220 listados completados hoy
+          </p>
+        </div>
       </div>
+      <p className="text-blue-500 font-semibold">3146 USDT</p>
+    </div>
 
-      {/* Bottom 4 Icon Buttons */}
-      <div className="flex justify-around mt-6 mb-6">
-        <button className="text-purple-500 hover:text-purple-700">
-          <FaHome size={30} />
-        </button>
-        <button className="text-pink-500 hover:text-pink-700">
-          <FaInfoCircle size={30} />
-        </button>
-        <button className="text-yellow-500 hover:text-yellow-700">
-          <FaStar size={30} />
-        </button>
-        <button className="text-red-500 hover:text-red-700">
-          <FaPhone size={30} />
-        </button>
+    <div className="flex justify-between items-center">
+      <div className="flex items-center gap-3">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+          className="w-8"
+        />
+        <div>
+          <p className="text-sm">Felicidades ****8347</p>
+          <p className="text-xs text-blue-500">
+            180 listados completados hoy
+          </p>
+        </div>
       </div>
+      <p className="text-blue-500 font-semibold">2106 USDT</p>
+    </div>
+
+  </div>
+</div>
+
+{/* Bottom Navigation */}
+<div className="fixed bottom-0 w-full max-w-2xl bg-white flex justify-around py-2">
+
+  <div className="flex flex-col items-center text-green-700">
+    <FaHome />
+    <p className="text-xs">inicio</p>
+  </div>
+
+  <div className="flex flex-col items-center">
+    <FaPlay />
+    <p className="text-xs">comenzar</p>
+  </div>
+
+  <div className="flex flex-col items-center">
+    <FaCrown />
+    <p className="text-xs">VIP</p>
+  </div>
+
+  <div className="flex flex-col items-center">
+    <FaChartLine />
+    <p className="text-xs">ganancia</p>
+  </div>
+
+  <div className="flex flex-col items-center">
+    <FaUser />
+    <p className="text-xs">mio</p>
+  </div>
+
+</div>
+
+</div>
     </div>
   );
 };
