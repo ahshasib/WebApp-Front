@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa";
 import Slider from "../component/HomeSlider";
 import FunctionButtons from "../component/HomeFunctionButton";
+import BottomNav from "../component/BottomNav";
 
 const Home = () => {
   const reviewRef = useRef(null);
@@ -121,34 +122,7 @@ const Home = () => {
 </div>
 
 {/* Bottom Navigation */}
-<div className="fixed bottom-0 w-full max-w-2xl bg-white flex justify-around py-2">
-
-  <div className="flex flex-col items-center text-green-700">
-    <FaHome />
-    <p className="text-xs">inicio</p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <FaPlay />
-    <p className="text-xs">comenzar</p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <FaCrown />
-    <p className="text-xs">VIP</p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <FaChartLine />
-    <p className="text-xs">ganancia</p>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <FaUser />
-    <p className="text-xs">mio</p>
-  </div>
-
-</div>
+<BottomNav></BottomNav>
 
 </div>
     </div>

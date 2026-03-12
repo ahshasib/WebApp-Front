@@ -8,6 +8,8 @@ import VideoPlayPage from '../pages/VideoPlayPage';
 import Recarger from '../pages/Recarger';
 import RecargerDetail from '../pages/RecargerDetail';
 import Vip from '../pages/VIP';
+import Profit from '../pages/Profit';
+import User from '../pages/User';
 
 const router = createBrowserRouter(
     [
@@ -42,6 +44,14 @@ const router = createBrowserRouter(
               {
                 path: "/vip",
                 element: <Vip />
+              },
+              {
+                path: "/profit",
+                element: <Profit />
+              },
+              {
+                path: "/user",
+                element: <User />
               },
             
             ]
