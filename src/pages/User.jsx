@@ -3,8 +3,8 @@ import { useNavigate } from "react-router";
 const menuItems = [
   { name: "Invite friends", img: "/888.png", path: "/invite" },
   { name: "Personal information", img: "/222.png" },
-  { name: "Recharge", img: "/333.png" },
-  { name: "Withdrawal", img: "/444.png" },
+  { name: "Recharge", img: "/333.png", path: "/recargar"  },
+  { name: "Withdrawal", img: "/444.png" , path: "/withdraw"},
   { name: "Financial Records", img: "/555.png" },
   { name: "Daily statement", img: "/666.png" },
   { name: "Team Reports", img: "/777.png" },
@@ -53,22 +53,22 @@ const User = () => {
       {/* Earnings Cards */}
       <div className="grid grid-cols-2 gap-3 px-4 mt-4 font-semibold">
 
-        <div className="bg-gray-500/40 rounded-xl p-3 text-center text-white">
+        <div className="bg-[rgba(0,0,0,0.3)] rounded-xl p-3 text-center text-white">
           <p className="text-sm">Yesterday's earnings</p>
           <p className="text-lg">0.00</p>
         </div>
 
-        <div className="bg-gray-500/40 rounded-xl p-3 text-center text-white">
+        <div className="bg-[rgba(0,0,0,0.3)] rounded-xl p-3 text-center text-white">
           <p className="text-sm">Today's earnings</p>
           <p className="text-lg">0.00</p>
         </div>
 
-        <div className="bg-gray-500/40 rounded-xl p-3 text-center text-white">
+        <div className="bg-[rgba(0,0,0,0.3)] rounded-xl p-3 text-center text-white">
           <p className="text-sm">This month's earnings</p>
           <p className="text-lg">1.05</p>
         </div>
 
-        <div className="bg-gray-500/40 rounded-xl p-3 text-center text-white">
+        <div className="bg-[rgba(0,0,0,0.3)] rounded-xl p-3 text-center text-white">
           <p className="text-sm">This week's earnings</p>
           <p className="text-lg">0.6</p>
         </div>
@@ -78,17 +78,17 @@ const User = () => {
       {/* Second Row Cards */}
       <div className="grid grid-cols-3 gap-3 px-4 mt-3 font-semibold">
 
-        <div className="bg-gray-500/40 rounded-xl p-3 text-center text-white">
+        <div className="bg-[rgba(0,0,0,0.3)] rounded-xl p-3 text-center text-white">
           <p className="text-xs">Total revenue</p>
           <p>1.05</p>
         </div>
 
-        <div className="bg-gray-500/40 rounded-xl p-3 text-center text-white">
+        <div className="bg-[rgba(0,0,0,0.3)] rounded-xl p-3 text-center text-white">
           <p className="text-xs">Subordinate task commission</p>
           <p>0.00</p>
         </div>
 
-        <div className="bg-gray-500/40 rounded-xl p-3 text-center text-white">
+        <div className="bg-[rgba(0,0,0,0.3)] rounded-xl p-3 text-center text-white">
           <p className="text-xs">Referral rebate</p>
           <p>0.00</p>
         </div>

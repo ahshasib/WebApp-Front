@@ -11,6 +11,7 @@ import Vip from '../pages/VIP';
 import Profit from '../pages/Profit';
 import User from '../pages/User';
 import Invite from '../pages/Invite';
+import Withdrawal from '../pages/Withdrawal';
 
 const router = createBrowserRouter(
     [
@@ -57,6 +58,10 @@ const router = createBrowserRouter(
               {
                 path: "/invite",
                 element: <Invite />
+              },
+              {
+                path: "/withdraw",
+                element: <Withdrawal />
               },
             
             ]
