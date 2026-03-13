@@ -1,6 +1,7 @@
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router";
+import { TbCopyPlusFilled } from "react-icons/tb";
 
 const Invite = () => {
 
@@ -15,10 +16,11 @@ const Invite = () => {
   const link = "https://asmtask.com//xml/index.html#/register/1113525";
 
   return (
-    <div className="min-h-screen bg-gray-100">
-
+    <div className="min-h-scree">
+<div className="w-[95%] h-screen relative mx-auto ">
+    
       {/* Navbar */}
-      <div className="flex items-center p-4 bg-white">
+      <div className="flex items-center py-4 bg-transparent">
 
         <button onClick={() => navigate(-1)}>
           <FaArrowLeft className="text-lg"/>
@@ -29,40 +31,40 @@ const Invite = () => {
 
       {/* Invite Box */}
 
-      <div className="p-4">
+      <div className=" absolute bottom-8 w-full bg-[rgba(0,0,0,0.3)] rounded-[1rem]">
 
-        <div className="bg-white rounded-xl p-6 shadow">
+        <div className=" p-6">
 
-          <h2 className="text-center text-lg font-semibold">
+          <h2 className="text-center text-lg font-semibold text-[#ff0]">
             Your best friend 12345678900
           </h2>
 
-          <p className="text-center mt-2">
+          <p className="text-center text-lg text-[#ff0]">
             Invite you to join the ASM
           </p>
 
 
-          <p className="text-center mt-4 font-semibold">
-            Scan me!
-          </p>
+          
 
-          <img
-            src="/qr.png"
-            className="w-40 mx-auto mt-3"
+         <div className="w-35 bg-white p-4 rounded-2xl mx-auto mt-10">
+         <img
+            src="/download.png"
+            className="w-full"
           />
+         </div>
 
 
           {/* Invite Code */}
 
-          <div className="flex justify-between items-center mt-6 bg-gray-100 p-3 rounded">
+          <div className="flex justify-between items-center mt-10 p-3">
 
-            <p>{code}</p>
+            <p className="w-full text-center text-3xl font-bold text-white">{code}</p>
 
             <button
               onClick={() => copyText(code)}
-              className="text-blue-500"
+              className="text-white"
             >
-              Copy
+              <TbCopyPlusFilled />
             </button>
 
           </div>
@@ -70,15 +72,15 @@ const Invite = () => {
 
           {/* Invite Link */}
 
-          <div className="flex justify-between items-center mt-3 bg-gray-100 p-3 rounded">
+          <div className="flex justify-between items-center mt-3 p-3">
 
-            <p className="text-sm break-all">{link}</p>
+            <p className="text-sm break-all w-full text-center text-white">{link}</p>
 
             <button
               onClick={() => copyText(link)}
-              className="text-blue-500"
+              className="text-white"
             >
-              Copy
+              <TbCopyPlusFilled />
             </button>
 
           </div>
@@ -87,6 +89,7 @@ const Invite = () => {
         </div>
 
       </div>
+</div>
 
     </div>
   );
