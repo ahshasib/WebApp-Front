@@ -12,6 +12,7 @@ import Profit from '../pages/Profit';
 import User from '../pages/User';
 import Invite from '../pages/Invite';
 import Withdrawal from '../pages/Withdrawal';
+import FinancialRecord from '../pages/FinancialRecord';
 
 const router = createBrowserRouter(
     [
@@ -62,6 +63,10 @@ const router = createBrowserRouter(
               {
                 path: "/withdraw",
                 element: <Withdrawal />
+              },
+              {
+                path: "/fundRecord",
+                element: <FinancialRecord />
               },
             
             ]

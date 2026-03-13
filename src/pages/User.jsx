@@ -5,7 +5,7 @@ const menuItems = [
   { name: "Personal information", img: "/222.png" },
   { name: "Recharge", img: "/333.png", path: "/recargar"  },
   { name: "Withdrawal", img: "/444.png" , path: "/withdraw"},
-  { name: "Financial Records", img: "/555.png" },
+  { name: "Financial Records", img: "/555.png", path:"/fundRecord" },
   { name: "Daily statement", img: "/666.png" },
   { name: "Team Reports", img: "/777.png" },
   { name: "Employee Handbook", img: "/111.png" },
