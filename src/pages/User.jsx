@@ -10,7 +10,7 @@ const menuItems = [
   { name: "Team Reports", img: "/777.png" },
   { name: "Employee Handbook", img: "/111.png", path:"/employHandbook"},
   { name: "Download APP", img: "/1012.png", path:"/downloadApp" },
-  { name: "Lucky Roulette", img: "/luckys.png" },
+  { name: "Lucky Roulette", img: "/luckys.png", path:"/lucky" },
   { name: "Fondo de riqueza", img: "/1011.png" },
   { name: "Mystery Box", img: "/BOX.png" },
   { name: "Points Store", img: "/shop.png" },

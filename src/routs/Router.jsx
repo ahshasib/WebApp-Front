@@ -16,6 +16,7 @@ import FinancialRecord from '../pages/FinancialRecord';
 import DailyStatement from '../pages/DailyStatement';
 import EmployeeHandbook from '../pages/EmployeeHandbook';
 import DownloadApp from '../pages/DownloadApp';
+import Lucky from '../pages/Lucky';
 
 const router = createBrowserRouter(
     [
@@ -82,6 +83,10 @@ const router = createBrowserRouter(
               {
                 path: "/downloadApp",
                 element: <DownloadApp />
+              },
+              {
+                path: "/lucky",
+                element: <Lucky />
               },
             
             ]
