@@ -1,25 +1,25 @@
 import React from "react";
 
 const menuItems = [
-  { name: "Invite friends", img: "/icons/invite.png" },
-  { name: "Personal information", img: "/icons/profile.png" },
-  { name: "Recharge", img: "/icons/recharge.png" },
-  { name: "Withdrawal", img: "/icons/withdraw.png" },
-  { name: "Financial Records", img: "/icons/records.png" },
-  { name: "Daily statement", img: "/icons/daily.png" },
-  { name: "Team Reports", img: "/icons/team.png" },
-  { name: "Employee Handbook", img: "/icons/book.png" },
-  { name: "Download APP", img: "/icons/download.png" },
-  { name: "Lucky Roulette", img: "/icons/roulette.png" },
-  { name: "Fondo de riqueza", img: "/icons/money.png" },
-  { name: "Mystery Box", img: "/icons/mystery.png" },
-  { name: "Points Store", img: "/icons/store.png" },
-  { name: "Exit login", img: "/icons/logout.png" },
+  { name: "Invite friends", img: "/888.png" },
+  { name: "Personal information", img: "/222.png" },
+  { name: "Recharge", img: "/333.png" },
+  { name: "Withdrawal", img: "/444.png" },
+  { name: "Financial Records", img: "/555.png" },
+  { name: "Daily statement", img: "/666.png" },
+  { name: "Team Reports", img: "/777.png" },
+  { name: "Employee Handbook", img: "/111.png" },
+  { name: "Download APP", img: "/1012.png" },
+  { name: "Lucky Roulette", img: "/luckys.png" },
+  { name: "Fondo de riqueza", img: "/1011.png" },
+  { name: "Mystery Box", img: "/BOX.png" },
+  { name: "Points Store", img: "/shop.png" },
+  { name: "Exit login", img: "/1013.png" },
 ];
 
 const User = () => {
   return (
-    <div className="min-h-screen  pb-20">
+    <div className="min-h-screen pb-20">
 
       {/* Profile */}
       <div className="text-center pt-6">
@@ -34,7 +34,10 @@ const User = () => {
       {/* Wallet Info */}
       <div className="px-4 mt-6">
         <p className="text-sm text-gray-700">Main Wallet(USDT)</p>
+        <div className="flex justify-between items-center">
         <p className="text-3xl text-blue-500 font-bold">0</p>
+        <p className="text-2xl text-blue-500 font-bold">Intern</p>
+        </div>
 
         <p className="text-sm text-gray-700 mt-3">Commission Wallet(USDT)</p>
         <p className="text-3xl text-blue-500 font-bold">1.0500</p>
@@ -45,7 +48,7 @@ const User = () => {
       </p>
 
       {/* Earnings Cards */}
-      <div className="grid grid-cols-2 gap-3 px-4 mt-4">
+      <div className="grid grid-cols-2 gap-3 px-4 mt-4 font-semibold">
 
         <div className="bg-gray-500/40 rounded-xl p-3 text-center text-white">
           <p className="text-sm">Yesterday's earnings</p>
@@ -70,7 +73,7 @@ const User = () => {
       </div>
 
       {/* Second Row Cards */}
-      <div className="grid grid-cols-3 gap-3 px-4 mt-3">
+      <div className="grid grid-cols-3 gap-3 px-4 mt-3 font-semibold">
 
         <div className="bg-gray-500/40 rounded-xl p-3 text-center text-white">
           <p className="text-xs">Total revenue</p>
@@ -98,10 +101,10 @@ const User = () => {
             <img
               src={item.img}
               alt={item.name}
-              className="w-10 h-10 mb-1"
+              className="w-12 h-11 mb-1"
             />
 
-            <p className="text-xs">{item.name}</p>
+            <p className="text-sm">{item.name}</p>
 
           </div>
         ))}
