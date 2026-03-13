@@ -10,6 +10,7 @@ import RecargerDetail from '../pages/RecargerDetail';
 import Vip from '../pages/VIP';
 import Profit from '../pages/Profit';
 import User from '../pages/User';
+import Invite from '../pages/Invite';
 
 const router = createBrowserRouter(
     [
@@ -52,6 +53,10 @@ const router = createBrowserRouter(
               {
                 path: "/user",
                 element: <User />
+              },
+              {
+                path: "/invite",
+                element: <Invite />
               },
             
             ]

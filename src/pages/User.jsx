@@ -1,7 +1,7 @@
 import React from "react";
-
+import { useNavigate } from "react-router";
 const menuItems = [
-  { name: "Invite friends", img: "/888.png" },
+  { name: "Invite friends", img: "/888.png", path: "/invite" },
   { name: "Personal information", img: "/222.png" },
   { name: "Recharge", img: "/333.png" },
   { name: "Withdrawal", img: "/444.png" },
@@ -17,7 +17,10 @@ const menuItems = [
   { name: "Exit login", img: "/1013.png" },
 ];
 
+
 const User = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen pb-20">
 
@@ -95,21 +98,23 @@ const User = () => {
       {/* Menu Grid */}
       <div className="grid grid-cols-4 gap-6 px-6 mt-8">
 
-        {menuItems.map((item, index) => (
-          <div key={index} className="flex flex-col items-center text-center">
+{menuItems.map((item, index) => (
+  <div
+    key={index}
+    onClick={() => item.path && navigate(item.path)}
+    className="flex flex-col items-center text-center cursor-pointer"
+  >
+    <img
+      src={item.img}
+      alt={item.name}
+      className="w-12 h-11 mb-1"
+    />
 
-            <img
-              src={item.img}
-              alt={item.name}
-              className="w-12 h-11 mb-1"
-            />
+    <p className="text-sm">{item.name}</p>
+  </div>
+))}
 
-            <p className="text-sm">{item.name}</p>
-
-          </div>
-        ))}
-
-      </div>
+</div>
 
     </div>
   );
