@@ -13,6 +13,9 @@ import User from '../pages/User';
 import Invite from '../pages/Invite';
 import Withdrawal from '../pages/Withdrawal';
 import FinancialRecord from '../pages/FinancialRecord';
+import DailyStatement from '../pages/DailyStatement';
+import EmployeeHandbook from '../pages/EmployeeHandbook';
+import DownloadApp from '../pages/DownloadApp';
 
 const router = createBrowserRouter(
     [
@@ -67,6 +70,18 @@ const router = createBrowserRouter(
               {
                 path: "/fundRecord",
                 element: <FinancialRecord />
+              },
+              {
+                path: "/dailyStatement",
+                element: <DailyStatement />
+              },
+              {
+                path: "/employHandbook",
+                element: <EmployeeHandbook />
+              },
+              {
+                path: "/downloadApp",
+                element: <DownloadApp />
               },
             
             ]
