@@ -18,6 +18,7 @@ import EmployeeHandbook from '../pages/EmployeeHandbook';
 import DownloadApp from '../pages/DownloadApp';
 import Lucky from '../pages/Lucky';
 import FondoRiqueza from '../pages/FondoRiqueza';
+import PointStore from '../pages/PointStore';
 
 const router = createBrowserRouter(
     [
@@ -92,6 +93,10 @@ const router = createBrowserRouter(
               {
                 path: "/fondo",
                 element: <FondoRiqueza />
+              },
+              {
+                path: "/pointStore",
+                element: <PointStore />
               },
             
             ]
