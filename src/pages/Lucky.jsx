@@ -58,14 +58,14 @@ Gold:0
 
 {/* ---------- WHEEL SECTION WITH BACKGROUND IMAGE ---------- */}
 
-<div
-className="flex justify-center py-8"
-style={{
-backgroundImage:"url('/box_bg.jpg')",
-backgroundSize:"cover",
-backgroundPosition:"center"
-}}
->
+<div className="relative flex justify-center py-8 w-full">
+
+<img
+  src="/box_bg.jpg"
+  className="absolute inset-0 w-full h-full object-cover"
+/>
+
+<div className="relative z-10">
 
 <LuckyWheel
 ref={wheelRef}
@@ -100,12 +100,14 @@ onStart={startSpin}
 
 </div>
 
+</div>
+
 
 {/* ---------- WINNING RECORD ---------- */}
 
 <div className="bg-white mt-8">
 
-<h2 className="font-semibold mb-3">
+<h2 className="font-semibold mb-3 py-3">
 Winning User Record
 </h2>
 
@@ -117,7 +119,7 @@ Winning User Record
 
 <div
 key={i}
-className="flex items-center justify-between py-2 border-b"
+className="flex items-center justify-between py-2 border-b border-gray-100"
 >
 
 <div className="flex items-center gap-2">
