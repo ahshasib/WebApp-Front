@@ -17,6 +17,7 @@ import DailyStatement from '../pages/DailyStatement';
 import EmployeeHandbook from '../pages/EmployeeHandbook';
 import DownloadApp from '../pages/DownloadApp';
 import Lucky from '../pages/Lucky';
+import FondoRiqueza from '../pages/FondoRiqueza';
 
 const router = createBrowserRouter(
     [
@@ -87,6 +88,10 @@ const router = createBrowserRouter(
               {
                 path: "/lucky",
                 element: <Lucky />
+              },
+              {
+                path: "/fondo",
+                element: <FondoRiqueza />
               },
             
             ]
