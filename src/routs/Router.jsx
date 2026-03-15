@@ -19,6 +19,7 @@ import DownloadApp from '../pages/DownloadApp';
 import Lucky from '../pages/Lucky';
 import FondoRiqueza from '../pages/FondoRiqueza';
 import PointStore from '../pages/PointStore';
+import MysteryBox from '../pages/MysteryBox';
 
 const router = createBrowserRouter(
     [
@@ -97,6 +98,10 @@ const router = createBrowserRouter(
               {
                 path: "/pointStore",
                 element: <PointStore />
+              },
+              {
+                path: "/mysteryBox",
+                element: <MysteryBox />
               },
             
             ]

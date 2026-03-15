@@ -12,7 +12,7 @@ const menuItems = [
   { name: "Download APP", img: "/1012.png", path:"/downloadApp" },
   { name: "Lucky Roulette", img: "/luckys.png", path:"/lucky" },
   { name: "Fondo de riqueza", img: "/1011.png", path:"/fondo"},
-  { name: "Mystery Box", img: "/BOX.png" },
+  { name: "Mystery Box", img: "/BOX.png", path:"/mysteryBox" },
   { name: "Points Store", img: "/shop.png", path:"/pointStore" },
   { name: "Exit login", img: "/1013.png" },
 ];
