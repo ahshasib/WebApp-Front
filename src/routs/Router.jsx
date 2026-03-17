@@ -1,6 +1,7 @@
 import React from 'react'
 import { createBrowserRouter } from 'react-router'
 import RootLayout from './../layout/RootLayout';
+import DashboardLayout from './../layout/DashboardLayout';
 import Home from '../pages/Home';
 import Perfil from '../pages/Perfil';
 import VideoTutorial from '../pages/VideoTutorial';
@@ -106,6 +107,15 @@ const router = createBrowserRouter(
             
             ]
         },
+        {
+          path: "/dashboard",
+          element: <DashboardLayout></DashboardLayout>,
+          children: [
+              
+          
+          
+          ]
+      },
         {
             path:"*",
             element:<Error></Error>
