@@ -171,7 +171,7 @@ export default function Sidebar() {
             <ul className="ml-6 mt-2 space-y-1">
 
               <li>
-                <Link className="block p-2 hover:bg-gray-200 rounded">
+                <Link to={"/dashboard/pendingwithdraw"} className="block p-2 hover:bg-gray-200 rounded">
                   Pending Payment
                 </Link>
               </li>

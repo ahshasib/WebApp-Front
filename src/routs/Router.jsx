@@ -21,6 +21,7 @@ import Lucky from '../pages/Lucky';
 import FondoRiqueza from '../pages/FondoRiqueza';
 import PointStore from '../pages/PointStore';
 import MysteryBox from '../pages/MysteryBox';
+import PendingWithdraw from '../pages/dashboard/PendingWithdraw';
 
 const router = createBrowserRouter(
     [
@@ -112,7 +113,10 @@ const router = createBrowserRouter(
           element: <DashboardLayout></DashboardLayout>,
           children: [
               
-          
+            {
+              path: "/dashboard/pendingwithdraw",
+              element: <PendingWithdraw/>
+            },
           
           ]
       },
