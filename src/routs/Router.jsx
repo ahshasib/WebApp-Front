@@ -22,12 +22,19 @@ import FondoRiqueza from '../pages/FondoRiqueza';
 import PointStore from '../pages/PointStore';
 import MysteryBox from '../pages/MysteryBox';
 import PendingWithdraw from '../pages/dashboard/PendingWithdraw';
+import Login from '../pages/Login';
+import Register from '../pages/Register';
+import PrivateRoute from '../privateroute/PrivateRoute';
 
 const router = createBrowserRouter(
     [
         {
             path: "/",
-            element: <RootLayout></RootLayout>,
+            element: (
+              <PrivateRoute>
+              <RootLayout></RootLayout>
+              </PrivateRoute>
+            ),
             children: [
                 { 
                 index: true, 
@@ -107,6 +114,14 @@ const router = createBrowserRouter(
               },
             
             ]
+        },
+        {
+          path:"/login",
+          element:<Login></Login>
+        },
+        {
+          path:"/register",
+          element:<Register></Register>
         },
         {
           path: "/dashboard",
