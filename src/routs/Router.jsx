@@ -25,6 +25,8 @@ import PendingWithdraw from '../pages/dashboard/PendingWithdraw';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import PrivateRoute from '../privateroute/PrivateRoute';
+import PersonalInfo from '../pages/PersonalInfo';
+import TaskArea from '../pages/TaskArea';
 
 const router = createBrowserRouter(
     [
@@ -111,6 +113,14 @@ const router = createBrowserRouter(
               {
                 path: "/mysteryBox",
                 element: <MysteryBox />
+              },
+              {
+                path: "/personalInfo",
+                element: <PersonalInfo/>
+              },
+              {
+                path: "/taskArea",
+                element: <TaskArea/>
               },
             
             ]

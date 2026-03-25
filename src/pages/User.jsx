@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router";
 const menuItems = [
   { name: "Invite friends", img: "/888.png", path: "/invite" },
-  { name: "Personal information", img: "/222.png" },
+  { name: "Personal information", img: "/222.png", path: "/personalInfo"},
   { name: "Recharge", img: "/333.png", path: "/recargar"  },
   { name: "Withdrawal", img: "/444.png" , path: "/withdraw"},
   { name: "Financial Records", img: "/555.png", path:"/fundRecord" },

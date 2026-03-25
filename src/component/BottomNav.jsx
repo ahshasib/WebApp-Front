@@ -21,7 +21,7 @@ const BottomNav = () => {
     </NavLink>
   
     <NavLink
-      to="/start"
+      to="/taskArea"
       className={({ isActive }) =>
         `flex flex-col items-center ${isActive ? "text-gray-500"  : "text-green-800"}`
       }
